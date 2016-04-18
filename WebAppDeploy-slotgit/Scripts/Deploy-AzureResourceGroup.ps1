@@ -3,7 +3,7 @@
 #Requires -Module Azure.Storage
 
 Param(
-    [string] [Parameter(Mandatory=$true)] $ResourceGroupLocation,
+    [string] $ResourceGroupLocation = 'Japan West',
     [string] $ResourceGroupName = 'WebAppDeploy-slotgit',
     [switch] $UploadArtifacts,
     [string] $StorageAccountName,
